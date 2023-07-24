@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+    background-color: #1A1B23;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+.main__sections-titles {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.header {
+    background-color: #1A1B23;
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.header__nav a {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    transition: 400ms;
+}
+
+.header__nav a:hover {
+    color: grey;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.header__logo {
+    width: 100px;
+    padding: 10px 20px;
+    transition: 500ms;
+}
+
+.header__logo:hover {
+    filter: blur(4px);
+    transition: 500ms;
+
+}
+
+.header__user-logo{
+    width: 40px;
+    padding: 10px 30px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__highlight {
+    background-image: url(../assets/social-network.webp);
+    -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 80%, transparent);
+    mask-image: linear-gradient(rgba(0, 0, 0, 1) 80%, transparent);
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main__highlight-card {
+    padding: 30px;
+    width: 50%;
+}
+
+.main__highlight-title {
+    font-size: 4rem;
+    padding: 20px 0;
+    color: #E2A000;
+}
+
+.main__highlight-content {
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 3px 0;
+}
+
+.main__btn {
+    display: flex;
+    gap: 15px;
+    padding-top: 30px;
+}
+
+.main__btn-left {
+    background-color: white;
+    font-size: 1.7rem;
+    padding: 5px 30px;
+    color: black;
+    border-radius: 5px;
+}
+
+.main__content {
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    padding: 25px 0;
+}
+
+.main__thumbnails {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 30px;
+}
+
+.main__sections img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    box-shadow: 10px 11px 19px 1px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 10px 11px 19px 1px rgba(0,0,0,0.4);
+    -moz-box-shadow: 10px 11px 19px 1px rgba(0,0,0,0.4);
+    border-radius: 5px;
+}
+
+.main__sections img:hover {
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+/* Responsive Design */
+
+/* First breakpoint: 1,300px */
+
+@media screen and (max-width: 1300px) {
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__thumbnails {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 30px;
+}
+
+.main__sections img {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+}
+
+}
+
+
+/* Second breakpoint: 1,000px */
+
+@media screen and (max-width: 1000px) {
+
+.main__content {
+display: flex;
+flex-direction: column;
+}
+
+.main__thumbnails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 30px;
+}
+
+.main__sections img {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+}
+
+}
+
+
+/* Third breakpoint: 600px */
+
+@media screen and (max-width: 600px) {
+
+.header__user {
+    display: none;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+.main__highlight {
+    background-image: url(../assets/social-network.webp), cover;
+    -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 80%, transparent);
+    mask-image: linear-gradient(rgba(0, 0, 0, 1) 80%, transparent);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main__highlight-card {
+    padding: 30px;
+    width: 70%;
+}
+
+.main__highlight-title {
+    font-size: 2.5rem;
+    padding: 30px 0;
+    color: #E2A000;
+}  
+    
+.main__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__thumbnails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 30px;
+}
+
+.main__sections img {
+    object-fit: cover;
+    width: 100%;
+    height: 120px;
+}
+
+}
+
+
+/* Fourth breakpoint: 450px */
+
+@media screen and (max-width: 450px) {
+
+h2 {
+    font-size: 1.3rem;
+}
+ 
+.main__highlight {
+    background-image: url(../assets/social-network.webp);
+    -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 80%, transparent);
+    mask-image: linear-gradient(rgba(0, 0, 0, 1) 80%, transparent);
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.main__highlight-card {
+    padding: 30px;
+    width: 70%;
+}
+
+.main__highlight-title {
+    font-size: 2.5rem;
+    padding: 30px 0;
+    color: #E2A000;
+}    
+    
+.main__content {
+    display: flex;
+    flex-direction: column;
+}
+    
+.main__thumbnails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 30px;
+}
+    
+.main__sections img {
+    object-fit: cover;
+    width: 100%;
+    height: 120px;
+}
+    
+}
+    

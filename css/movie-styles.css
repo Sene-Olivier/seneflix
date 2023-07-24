@@ -1,0 +1,130 @@
+body {
+    background-color: #1A1B23;
+}
+
+.main__movie {
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main__movie-card {
+    width: 50%;
+    background-color: rgba(56, 55, 55, 0.53);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+
+.main__seven {
+    background-image: url(../assets/seven-page.jpg);
+}
+
+.main__sour-grapes {
+    background-image: url(../assets/sour-grapes-page.jpg);
+}
+
+.main__lost-translation {
+    background-image: url(../assets/lost-translation-page.jpg);
+}
+
+.main__h {
+    background-image: url(../assets/h-page.jpg);
+}
+
+.main__social-network {
+    background-image: url(../assets/social-network-page.jpg);
+}
+
+.main__loup-wallstreet {
+    background-image: url(../assets/loup-wallstreet-page.jpg);
+}
+
+.main__ipman {
+    background-image: url(../assets/ipman-page.jpg);
+}
+
+.main__sous-doues {
+    background-image: url(../assets/sous-doues-page.jpg);
+}
+
+.main__breaking-surface {
+    background-image: url(../assets/breaking-surface-page.jpg);
+}
+
+.main__kickboxer {
+    background-image: url(../assets/kickboxer-page.jpg);
+}
+
+.main__plein-soleil {
+    background-image: url(../assets/plein-soleil-page.jpg);
+}
+
+.main__point-break {
+    background-image: url(../assets/point-break-page.jpg);
+}
+
+
+/* Responsive Design */
+
+/* First breakpoint: 1,000px */
+
+@media screen and (max-width: 1000px) {
+
+ .main__movie {
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.main__movie-card {
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(56, 55, 55, 0.53);
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+}
+
+
+/* First breakpoint: 700px */
+
+@media screen and (max-width: 700px) {
+
+.main__movie {
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+   
+.main__movie-card {
+    width: 100%;
+    gap: 15px;
+    padding: 15px;
+    line-height: 1.2rem;
+    background-color: rgba(56, 55, 55, 0.53);
+    display: flex;
+    flex-direction: column;
+}
+
+.main__movie-title {
+    font-size: 2.5rem;
+}
+
+p {
+    margin-top: 15px;
+}
+   
+}
